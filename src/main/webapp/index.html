@@ -1,67 +1,472 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Isaias Tavares - Minibiografia</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
-  </head>
-  <body>
-		<h1>Isaias Tavares da Silva Neto</h1>
+<!DOCTYPE html>
+<html lang="en" class="theme-color-07cb79 theme-skin-light">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<div class="secao">
-			<h2>Dados Pessoais</h2>			
-				<div id="hcard-Ademir-Mazer-Jr" class="vcard">
-				 <p><label>Nome</label>Isaias Tavares</p>
-				 <p><label>Email</label>isaiasengsoft@gmail.com</p>
-				 <p><label>Cidade</label>Goiânia - GO</p>
-				</div>
-		</div>
+	<title>Minibiografia - Isaias Tavares da Silva Neto</title>
 
-		<div class="secao">
-			<h2>Experiência</h2>
-			
-			<p><label>Cargo</label>Desenvolvedor de Software</p>
-			<p><label>Empresa</label>PC Sistemas by TOTVS</p>
-			<p><label>Tempo</label>março de 2017 - até o momento</p>
-			
-			<p><label>Cargo</label>Desenvolvedor de Software</p>
-			<p><label>Empresa</label>Oobj - Tecnologia da Informação</p>
-			<p><label>Tempo</label>junho de 2015 - março de 2017</p>
-			<p><label>Descrição</label>Desenvolvedor full-stack de Software voltado para Documentos Fiscais Eletrônicos (NF-e, NFC-e, MDF-e, CF-e SAT), utilizando as tecnologias:
-			 Java EE, AngularJS, Spring, JMS, JavaFX, Hibernate, SQL (PostgreSQL, SQLServer e Oracle), SVN. Atuação em demandas críticas, prazo curto, melhorias legais, melhorias evolutivas
-			 para o produto. Experiência com integração contínua usando Jenkins, Sonar, sempre buscando refatorar códigos legados e usando metodologias ágeis como Scrum.</p>
-		</div>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.png"/>
 
-		<div class="secao">
-			<h2>Formação Acadêmica</h2>
-			
-			<p><label>Curso</label>Cursando Graduação em Engenharia de Software</p>
-		</div>
+	<!-- Google Fonts -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
 
-		<div class="secao">
-			<h2>Línguas</h2>
-			<table>
-				<thead>
-				<tr>
-					<th>Língua</th>
-					<th>Escrita</th>
-					<th>Fala</th>
-					<th>Leitura</th>
-				</tr>
-				</thead>
-				<tr class="par">
-					<td>Inglês</td>
-					<td class="bom">Bom</td>
-					<td class="bom">Bom</td>
-					<td class="otimo">Ótimo</td>
-				</tr>
-				<tr class="impar">
-					<td>Espanhol</td>
-					<td class="ruim">Ruim</td>
-					<td class="ruim">Ruim</td>
-					<td class="regular">Regular</td>
-				</tr>
-			</table>			
-		</div>
-	</body>
+	<!-- Icon Fonts -->
+	<link rel="stylesheet" type="text/css" href="fonts/map-icons/map-icons.css">
+	<link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+
+	<!-- Styles -->
+	<link type="text/css" media="screen" rel="stylesheet" href="awwwards.css" />
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.bxslider/jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.mediaelement/mediaelementplayer.min.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery.optionpanel/option-panel.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="colors/theme-color.css">
+
+	<!-- Modernizer for detect what features the user’s browser has to offer -->
+	<script type="text/javascript" src="js/libs/modernizr.js"></script>
+</head>
+
+<body class="home header-has-img loading">
+    <div class="mobile-nav">
+        <button class="btn-mobile mobile-nav-close"><i class="rsicon rsicon-close"></i></button>
+
+        <div class="mobile-nav-inner">
+            <nav id="mobile-nav" class="nav">
+				<ul class="clearfix">
+					<li><a href="#about">Sobre</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experiências</a></li>
+					<li><a href="#references">Referências</a></li>
+					<li><a href="#contact">Contato <span></span></a></li>
+				</ul>
+			</nav>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="head-bg" style="background-image: url('img/uploads/background.jpg')"></div>
+
+            <div class="head-bar">
+                <div class="head-bar-inner">
+                    <div class="row">
+                        <div class="col-sm-10 col-xs-6">
+                            <div class="nav-wrap">
+                                <nav id="nav" class="nav">
+									<ul class="clearfix">
+										<li><a href="#about">Sobre</a></li>
+										<li><a href="#skills">Skills</a></li>
+										<li><a href="#experience">Experiências</a></li>
+										<li><a href="#references">Referências</a></li>
+										<li><a href="#contact">Contato <span></span></a></li>
+									</ul>
+								</nav>
+                            </div><!-- .nav-wrap -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- .header -->
+
+        <div class="content">
+            <div class="container">
+
+				<!-- START: PAGE CONTENT -->
+				<section id="about" class="section section-about">
+					<div class="animate-up">
+						<div class="section-box">
+							<div class="profile">
+								<div class="row">
+									<div class="col-xs-5">
+										<div class="profile-photo"><img src="img/uploads/isaias_tavares.jpg" alt="Isaias Tavares"/></div>
+									</div>
+									<div class="col-xs-7">
+										<div class="profile-info">
+											<div class="profile-preword"><span>Olá</span></div>
+											<h1 class="profile-title"><span>Meu nome é</span> Isaias Tavares</h1>
+											<h2 class="profile-position">Desenvolvedor de Software</h2></div>
+                                            <ul class="profile-list">
+                                                <li class="clearfix">
+                                                    <strong class="title">Idade</strong>
+                                                    <span class="cont">22</span>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <strong class="title">Endereço</strong>
+                                                    <span class="cont">Rua da Liberdade, Qd. 16, Cond. Residencial Bem Viver, Apto. 204 Bloco G - Vila Martins - Goiânia/GO</span>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <strong class="title">E-mail</strong>
+                                                    <span class="cont"><a href="mailto:isaiasengsoft@gmail.com">isaiasengsoft@gmail.com</a></span>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <strong class="title">Celular</strong>
+                                                    <span class="cont"><a href="tel:+5562982664145">+55 (62) 98266-4145</a></span>
+                                                </li>
+                                            </ul>
+									</div>
+								</div>
+							</div>
+							<div class="profile-social">
+								<ul class="social">
+									<li><a class="ripple-centered" href="https://www.linkedin.com/in/isaiastavares94" target="_blank"><i class="rsicon rsicon-linkedin"></i></a></li>
+									<li><a class="ripple-centered" href="https://github.com/isaiastavares" target="_blank"><i class="rsicon rsicon-github"></i></a></li>
+									<li><a class="ripple-centered" href="https://www.facebook.com/isaias.tavares.12" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
+									<li><a class="ripple-centered" href="https://www.instagram.com/isaiastavares94" target="_blank"><i class="rsicon rsicon-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+                        <div class="section-txt-btn">
+                            <p><a class="btn btn-lg btn-border ripple" target="_blank" href="http://dev.novembit.com/rs_card/wp-content/uploads/2015/11/test-1.pdf">Download Curriculo</a></p>
+                            <p>Olá! Meu nome é Isaias Tavares. Sou desenvolvedor Full Stack. Experiente em todas as etapas do ciclo de desenvolvimento de projetos. Conhecimento em
+                            linguagens de programação, incluindo JavaScript, Java, C, SQL.</p>
+                        </div>
+					</div>
+				</section><!-- #about -->
+
+				<section id="skills" class="section section-skills">
+					<div class="animate-up">
+						<h2 class="section-title">Skills</h2>
+						<div class="section-box">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">Java</span>
+											<span class="bar-value">80%</span>
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="80%"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">JavaScript</span>
+											<span class="bar-value">70%</span>
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="70%"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">AngularJS</span>
+											<span class="bar-value">80%</span>
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="80%"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">HTML & CSS</span>
+											<span class="bar-value">80%</span>
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="80%"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">MySQL, PostgreSQL e Oracle</span>
+											<span class="bar-value">90%</span>
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="90%"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">JavaFX</span>
+											<span class="bar-value">80%</span>
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="80%"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- #skills -->
+
+				<section id="experience" class="section section-experience">
+					<div class="animate-up">
+						<h2 class="section-title">Experiências</h2>
+
+						<div class="timeline">
+							<div class="timeline-bar"></div>
+							<div class="timeline-inner clearfix">
+                                <div class="timeline-box timeline-box-left">
+                                    <span class="dot"></span>
+                                    <div class="timeline-box-inner animate-right">
+                                        <span class="arrow"></span>
+                                        <div class="date">2017 - HOJE</div>
+                                        <h3>PC Sistemas by TOTVS</h3>
+                                        <h4>Desenvolvedor de Software</h4>
+                                        <p>Desenvolvedor full-stack de Software voltado para a área de Varejo, utilizando as tecnologias: Java, JavaFX, GWT, Spring,
+                                        Hibernate, SQL (PostgreSQL e Oracle), SVN.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-box timeline-box-right">
+                                    <span class="dot"></span>
+                                    <div class="timeline-box-inner animate-left">
+                                        <span class="arrow"></span>
+                                        <div class="date">2015 - 2017</div>
+                                        <h3>Oobj - Tecnologia da Informação</h3>
+                                        <h4>Desenvolvedor de Software</h4>
+                                        <p>Desenvolvedor full-stack de Software voltado para Documentos Fiscais Eletrônicos (NF-e, NFC-e, CT-e, MDF-e, CF-e SAT),
+                                        utilizando as tecnologias: Java EE, AngularJS, Spring, JMS, JavaFX, Hibernate, SQL (PostgreSQL, SQLServer e Oracle), SVN.
+                                        Atuação em demandas críticas, prazo curto, melhorias legais, melhorias evolutivas para o produto. Experiência com integração
+                                        contínua usando Jenkins, Sonar, sempre buscando refatorar códigos legados e usando metodologias ágeis como Scrum.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-box timeline-box-left">
+                                    <span class="dot"></span>
+                                    <div class="timeline-box-inner animate-right">
+                                        <span class="arrow"></span>
+                                        <div class="date">2012 - 2015</div>
+                                        <h3>Oobj - Tecnologia da Informação</h3>
+                                        <h4>Analista de Suporte</h4>
+                                        <p>Atendimento ao cliente referente ao sistema de gestão, emissão e recebimento de NF-e, NFC-e, CT-e, MDF-e, orientando a
+                                        melhor forma de utilizar o sistema, esclarecendo dúvidas sobre o negócio e sobre o sistema, aplicando soluções de contorno,
+                                        analisando e configurando o ambiente do cliente para o perfeito funcionamento, realização de implantação a distância,
+                                        realização de capacitação de cliente a distância ou presencial. Trabalho orientado a metas, utilizando as boas práticas do ITIL,
+                                        utilização da ferramenta Qualitor, Wiki como gestão de conhecimento e Redmine.</p>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</section><!-- #experience -->
+
+				<section id="education" class="section section-education">
+					<div class="animate-up">
+						<h2 class="section-title">Educação</h2>
+						<div class="timeline">
+							<div class="timeline-bar"></div>
+							<div class="timeline-inner clearfix">
+
+                                <div class="timeline-box timeline-box-compact timeline-box-left">
+                                    <span class="dot"></span>
+
+                                    <div class="timeline-box-inner animate-right">
+                                        <span class="arrow"></span>
+                                        <div class="date"><span>2012 - 2018</span></div>
+                                        <h3>Bacharelando em Engenharia de Software</h3>
+                                        <h4>UFG - Universidade Federal de Goiás</h4>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-box timeline-box-compact timeline-box-right">
+                                    <span class="dot"></span>
+
+                                    <div class="timeline-box-inner animate-left">
+                                        <span class="arrow"></span>
+                                        <div class="date"><span>2009 - 2011</span></div>
+                                        <h3>Ensino Médio</h3>
+                                        <h4>Colégio Metropolitano</h4>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</section><!-- #education -->
+
+				<section id="clients" class="section section-clients">
+					<div class="animate-up">
+
+                        <div class="clients-carousel">
+                            <div class="client-logo">
+                                <img src="img/uploads/logos/logo-angularjs.png" title="angular js" alt="angular js"/>
+                            </div>
+
+                            <div class="client-logo">
+                                <a href="https://evernote.com" target="_blank"><img src="img/uploads/logos/logo-evernote.png" title="evernote" alt="evernote"/></a>
+                            </div>
+
+                            <div class="client-logo">
+                                <a href="http://getbootstrap.com" target="_blank"><img src="img/uploads/logos/logo-bootstrap.png" title="bootstrap" alt="bootstrap"/></a>
+                            </div>
+
+                            <div class="client-logo">
+                                <a href="http://jasmine.github.io" target="_blank"><img src="img/uploads/logos/logo-jasmine.png" title="jasmine" alt="jasmine"/></a>
+                            </div>
+
+                            <div class="client-logo">
+                                <a href="https://jquery.com" target="_blank"><img src="img/uploads/logos/logo-jquery.png" title="jquery" alt="jquery"/></a>
+                            </div>
+						</div>
+					</div>
+				</section><!-- #clients -->
+
+				<section id="references" class="section section-references">
+					<div class="animate-up">
+						<h2 class="section-title">Referências</h2>
+						<div class="section-box">
+							<ul class="ref-slider">
+								<li>
+									<div class="ref-box">
+										<div class="person-speech">
+											<p>Isaías e eu entramos na mesma época na Oobj: outubro de 2012.
+											No começo não tínhamos experiência, mas em pouco tempo aprendemos bastante e conseguimos superar as expectativas da empresa.
+											Ele é uma pessoa calma, inteligente, esforçada e sempre buscar a melhor forma para atender o cliente, além trabalhar em equipe ajudando aos colegas que precisam.
+											Foi excelente trabalhar com ele.</p>
+										</div>
+										<div class="person-info clearfix">
+											<img class="person-img" src="img/uploads/marcus_vinicius.jpg" alt="Headshot">
+											<div class="person-name-title">
+												<span class="person-name">Marcus Vinícius Voltolim</span>
+												<span class="person-title">Desenvolvedor de Software</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ref-box">
+										<div class="person-speech">
+											<p>Isaías e eu entramos na mesma época na Oobj: outubro de 2012.
+											No começo não tínhamos experiência, mas em pouco tempo aprendemos bastante e conseguimos superar as expectativas da empresa.
+											Ele é uma pessoa calma, inteligente, esforçada e sempre buscar a melhor forma para atender o cliente, além trabalhar em equipe ajudando aos colegas que precisam.
+											Foi excelente trabalhar com ele.</p>
+										</div>
+										<div class="person-info clearfix">
+											<img class="person-img" src="img/uploads/marcus_vinicius.jpg" alt="Headshot">
+											<div class="person-name-title">
+												<span class="person-name">Marcus Vinícius Voltolim</span>
+												<span class="person-title">Desenvolvedor de Software</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ref-box">
+										<div class="person-speech">
+											<p>Isaías e eu entramos na mesma época na Oobj: outubro de 2012.
+											No começo não tínhamos experiência, mas em pouco tempo aprendemos bastante e conseguimos superar as expectativas da empresa.
+											Ele é uma pessoa calma, inteligente, esforçada e sempre buscar a melhor forma para atender o cliente, além trabalhar em equipe ajudando aos colegas que precisam.
+											Foi excelente trabalhar com ele.</p>
+										</div>
+										<div class="person-info clearfix">
+											<img class="person-img" src="img/uploads/marcus_vinicius.jpg" alt="Headshot">
+											<div class="person-name-title">
+												<span class="person-name">Marcus Vinícius Voltolim</span>
+												<span class="person-title">Desenvolvedor de Software</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="ref-slider-nav">
+								<span id="ref-slider-prev" class="slider-prev"></span>
+								<span id="ref-slider-next" class="slider-next"></span>
+							</div>
+						</div>
+					</div>
+				</section><!-- #references -->
+
+				<section id="contact" class="section section-contact">
+					<div class="animate-up">
+						<h2 class="section-title">Contato</h2>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="section-box contact-form">
+									<h3>Sinta-se a vontade para me contatar</h3>
+
+									<form class="contactForm" action="php/contact_form.php" method="post">
+										<div class="input-field">
+											<input class="contact-name" type="text" name="name"/>
+											<span class="line"></span>
+											<label>Nome</label>
+										</div>
+
+										<div class="input-field">
+											<input class="contact-email" type="email" name="email"/>
+											<span class="line"></span>
+											<label>Email</label>
+										</div>
+
+										<div class="input-field">
+											<input class="contact-subject" type="text" name="subject"/>
+											<span class="line"></span>
+											<label>Assunto</label>
+										</div>
+
+										<div class="input-field">
+											<textarea class="contact-message" rows="4" name="message"></textarea>
+											<span class="line"></span>
+											<label>Mensagem</label>
+										</div>
+
+										<span class="btn-outer btn-primary-outer ripple">
+											<input class="contact-submit btn btn-lg btn-primary" type="submit" value="Enviar"/>
+										</span>
+
+										<div class="contact-response"></div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- #contact -->
+
+
+			<!-- END: PAGE CONTENT -->
+
+            </div><!-- .container -->
+        </div><!-- .content -->
+
+        <footer class="footer">
+            <div class="footer-social">
+                <ul class="social">
+					<li><a class="ripple-centered" href="https://www.linkedin.com/in/isaiastavares94" target="_blank"><i class="rsicon rsicon-linkedin"></i></a></li>
+					<li><a class="ripple-centered" href="https://github.com/isaiastavares" target="_blank"><i class="rsicon rsicon-github"></i></a></li>
+					<li><a class="ripple-centered" href="https://www.facebook.com/isaias.tavares.12" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
+					<li><a class="ripple-centered" href="https://www.instagram.com/isaiastavares94" target="_blank"><i class="rsicon rsicon-instagram"></i></a></li>
+				</ul>
+            </div>
+        </footer><!-- .footer -->
+    </div><!-- .wrapper -->
+
+	<a class="btn-scroll-top" href="#"><i class="rsicon rsicon-arrow-up"></i></a>
+    <div id="overlay"></div>
+    <div id="preloader">
+		<div class="preload-icon"><span></span><span></span></div>
+		<div class="preload-text">Carregando ...</div>
+	</div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript" src="js/site.min.js"></script>
+</body>
 </html>
